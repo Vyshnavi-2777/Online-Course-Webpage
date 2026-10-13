@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LearnHub</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <h1>LearnHub</h1>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#courses">Courses</a>
+    </nav>
+</header>
+
+<section class="hero" id="home">
+    <h2>Learn New Skills Online</h2>
+    <p>Build your future with LearnHub!</p>
+    <button onclick="exploreCourses()">Explore Courses</button>
+</section>
+
+<section class="courses" id="courses">
+    <h2>Popular Courses</h2>
+    <div class="container">
+        <div class="card">
+            <h3>💻 Web Development</h3>
+            <p>Instructor: John Smith</p>
+            <p>Duration: 8 Weeks</p>
+            <p>Price: ₹2,999</p>
+            <button onclick="enroll('Web Development')">Enroll</button>
+        </div>
+        <div class="card">
+            <h3>🐍 Python</h3>
+            <p>Instructor: Sarah</p>
+            <p>Duration: 6 Weeks</p>
+            <p>Price: ₹1,999</p>
+            <button onclick="enroll('Python')">Enroll</button>
+        </div>
+        <div class="card">
+            <h3>📊 Data Science</h3>
+            <p>Instructor: David</p>
+            <p>Duration: 10 Weeks</p>
+            <p>Price: ₹3,999</p>
+            <button onclick="enroll('Data Science')">Enroll</button>
+        </div>
+    </div>
+</section>
+
+<footer>© 2026 LearnHub</footer>
+<script src="script.js"></script>
+</body>
+</html>
+```

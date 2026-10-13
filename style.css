@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f7fb;
+}
+
+header, footer {
+    background: #243b80;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav a {
+    color: white;
+    margin: 10px;
+    text-decoration: none;
+}
+
+.hero {
+    background: #5378d4;
+    color: white;
+    text-align: center;
+    padding: 50px 15px;
+}
+
+button {
+    background: #243b80;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.hero button {
+    background: #ffd166;
+    color: black;
+    margin-top: 15px;
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+
+.courses {
+    text-align: center;
+    padding: 35px 8%;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px #ccc;
+    animation: appear 0.8s;
+}
+
+.card p {
+    margin: 12px;
+}
+
+@keyframes appear {
+    from { opacity: 0; transform: translateY(15px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+footer {
+    justify-content: center;
+}
+
+@media (max-width: 600px) {
+    header { flex-direction: column; gap: 10px; }
+}
